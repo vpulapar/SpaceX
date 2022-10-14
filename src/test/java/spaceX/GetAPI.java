@@ -24,7 +24,6 @@ public class GetAPI {
                 .get("https://swapi.dev/api/people/")
                 .then()
                 .extract().response();
-
         Assert.assertEquals(200, response.statusCode());
         //System.out.println(response.getBody());
         ObjectMapper objectMapper = new ObjectMapper();
