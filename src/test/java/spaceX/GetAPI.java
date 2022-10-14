@@ -30,7 +30,7 @@ public class GetAPI {
         ObjectMapper objectMapper = new ObjectMapper();
         Root root=objectMapper.readValue(response.getBody().print(), Root.class);
         List<Result> list=root.getResults();
-        
+
         boolean flag=false;
         for (Result r:list
              ) {
